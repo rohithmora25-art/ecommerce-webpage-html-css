@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AuraShop - Premium Lifestyle, Tech & Fashion E-Commerce Storefront">
+  <title>AuraShop | Modern E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Utility Bar -->
+  <div class="top-announcement">
+    <div class="container top-bar-flex">
+      <div class="promo-msg">
+        🚀 <strong>Season Clearance:</strong> Get Up to <strong>40% OFF</strong> on all audio &amp; smart wear. Free shipping on orders over $50!
+      </div>
+      <div class="top-nav-aux">
+        <span>Help Center</span>
+        <span>Track Order</span>
+        <span>USD ($)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Navigation -->
+  <header class="navbar">
+    <div class="container navbar-flex">
+      <a href="#home" class="logo">
+        <span class="logo-symbol">❖</span> Aura<span>Shop</span>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="nav-search">
+        <input type="text" placeholder="Search across 10,000+ products, gadgets, styles..." class="search-input">
+        <button type="button" class="search-btn">🔍</button>
+      </div>
+
+      <!-- User Cart & Actions -->
+      <div class="nav-actions">
+        <a href="#cart" class="action-item">
+          <span class="action-icon">❤️</span>
+          <span class="action-label">Wishlist</span>
+          <span class="badge-count">2</span>
+        </a>
+        <a href="#cart" class="action-item cart-action">
+          <span class="action-icon">🛍️</span>
+          <span class="action-label">Cart</span>
+          <span class="badge-count">3</span>
+        </a>
+      </div>
+
+      <!-- Mobile Navigation Hamburger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Category Links Sub-bar -->
+      <nav class="category-nav">
+        <a href="#electronics" class="cat-link active">Electronics</a>
+        <a href="#fashion" class="cat-link">Fashion &amp; Apparel</a>
+        <a href="#home-living" class="cat-link">Home &amp; Living</a>
+        <a href="#featured" class="cat-link">Featured Deals</a>
+        <a href="#reviews" class="cat-link">Customer Reviews</a>
+        <a href="#newsletter" class="cat-link special-tag">Flash Sale 🔥</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Promotional Banner -->
+  <section id="home" class="hero-banner">
+    <div class="container hero-banner-grid">
+      <div class="banner-text">
+        <span class="banner-pill">Summer Tech Drop 2026</span>
+        <h1 class="banner-headline">Next-Gen Audio &amp; Wearables</h1>
+        <p class="banner-subtext">
+          Immerse yourself in high-fidelity studio acoustics and ergonomic designs engineered for your daily lifestyle.
+        </p>
+        <div class="banner-cta-group">
+          <a href="#featured" class="btn btn-primary">Shop Featured Now</a>
+          <a href="#categories" class="btn btn-secondary">Explore Categories</a>
+        </div>
+      </div>
+      <div class="banner-graphic">
+        <div class="graphic-card">
+          <div class="product-visual-circle">
+            <span class="hero-product-icon">🎧</span>
+          </div>
+          <div class="floating-promo-tag">
+            <span class="tag-title">Acoustic Pro 3</span>
+            <span class="tag-price">$199 <del>$299</del></span>
+          </div>
+          <div class="badge-discount-burst">
+            -35%
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories Section -->
+  <section id="categories" class="categories-section">
+    <div class="container">
+      <div class="section-title-box">
+        <span class="subtitle">Hand-picked Collections</span>
+        <h2 class="title">Shop By Categories</h2>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card">
+          <div class="cat-icon-wrap bg-blue">💻</div>
+          <h3>Laptops &amp; PCs</h3>
+          <p>120+ Products</p>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icon-wrap bg-purple">🎧</div>
+          <h3>Headphones &amp; Audio</h3>
+          <p>85+ Products</p>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icon-wrap bg-pink">⌚</div>
+          <h3>Smart Wearables</h3>
+          <p>64+ Products</p>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icon-wrap bg-orange">📷</div>
+          <h3>Cameras &amp; Gear</h3>
+          <p>42+ Products</p>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icon-wrap bg-teal">🎮</div>
+          <h3>Gaming Accessories</h3>
+          <p>95+ Products</p>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icon-wrap bg-green">👟</div>
+          <h3>Sport &amp; Sneakers</h3>
+          <p>110+ Products</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section id="featured" class="products-section">
+    <div class="container">
+      <div class="section-header-flex">
+        <div>
+          <span class="subtitle">Curated Catalog</span>
+          <h2 class="title">Featured Products</h2>
+        </div>
+        <div class="filter-chips">
+          <span class="chip chip-active">All Products</span>
+          <span class="chip">Trending</span>
+          <span class="chip">Top Rated</span>
+          <span class="chip">On Sale</span>
+        </div>
+      </div>
+
+      <div class="product-cards-grid">
+        <!-- Product 1 -->
+        <article class="product-card">
+          <div class="card-thumb thumb-1">
+            <span class="sale-badge">-25% OFF</span>
+            <span class="thumb-icon">🎧</span>
+          </div>
+          <div class="card-details">
+            <span class="card-category">Audio &amp; Sound</span>
+            <h3 class="product-title">Pulse ANC Wireless Headphones</h3>
+            <div class="rating-box">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(142)</span>
+            </div>
+            <div class="card-pricing">
+              <div class="price-stack">
+                <span class="current-price">$149.00</span>
+                <span class="original-price">$199.00</span>
+              </div>
+              <button class="add-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <div class="card-thumb thumb-2">
+            <span class="sale-badge badge-new">NEW ARRIVAL</span>
+            <span class="thumb-icon">⌚</span>
+          </div>
+          <div class="card-details">
+            <span class="card-category">Wearables</span>
+            <h3 class="product-title">ChronoFit Titanium Smartwatch</h3>
+            <div class="rating-box">
+              <span class="stars">★★★★☆</span>
+              <span class="review-count">(98)</span>
+            </div>
+            <div class="card-pricing">
+              <div class="price-stack">
+                <span class="current-price">$229.00</span>
+                <span class="original-price">$269.00</span>
+              </div>
+              <button class="add-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <div class="card-thumb thumb-3">
+            <span class="sale-badge">-30% OFF</span>
+            <span class="thumb-icon">📷</span>
+          </div>
+          <div class="card-details">
+            <span class="card-category">Photography</span>
+            <h3 class="product-title">Lumix Ultra 4K Mirrorless Rig</h3>
+            <div class="rating-box">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(312)</span>
+            </div>
+            <div class="card-pricing">
+              <div class="price-stack">
+                <span class="current-price">$699.00</span>
+                <span class="original-price">$999.00</span>
+              </div>
+              <button class="add-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <div class="card-thumb thumb-4">
+            <span class="sale-badge">HOT DEAL</span>
+            <span class="thumb-icon">🎮</span>
+          </div>
+          <div class="card-details">
+            <span class="card-category">Gaming</span>
+            <h3 class="product-title">Vortex Pro Wireless Gamepad</h3>
+            <div class="rating-box">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(215)</span>
+            </div>
+            <div class="card-pricing">
+              <div class="price-stack">
+                <span class="current-price">$59.99</span>
+                <span class="original-price">$79.99</span>
+              </div>
+              <button class="add-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+          <div class="card-thumb thumb-5">
+            <span class="sale-badge">-15% OFF</span>
+            <span class="thumb-icon">💻</span>
+          </div>
+          <div class="card-details">
+            <span class="card-category">Computing</span>
+            <h3 class="product-title">ZenBook Slim OLED 14" Laptop</h3>
+            <div class="rating-box">
+              <span class="stars">★★★★☆</span>
+              <span class="review-count">(88)</span>
+            </div>
+            <div class="card-pricing">
+              <div class="price-stack">
+                <span class="current-price">$849.00</span>
+                <span class="original-price">$999.00</span>
+              </div>
+              <button class="add-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card">
+          <div class="card-thumb thumb-6">
+            <span class="sale-badge badge-new">BESTSELLER</span>
+            <span class="thumb-icon">🔊</span>
+          </div>
+          <div class="card-details">
+            <span class="card-category">Home Audio</span>
+            <h3 class="product-title">OmniSound 360 Spatial Speaker</h3>
+            <div class="rating-box">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(475)</span>
+            </div>
+            <div class="card-pricing">
+              <div class="price-stack">
+                <span class="current-price">$119.00</span>
+                <span class="original-price">$149.00</span>
+              </div>
+              <button class="add-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mid-Page Special Offer Callout -->
+  <section class="special-promo-strip">
+    <div class="container promo-strip-flex">
+      <div class="strip-text">
+        <span class="strip-badge">Limited Time Cyber Offer</span>
+        <h2>Bundle &amp; Save 50% on Premium Accessories</h2>
+        <p>Combine any smartwatch or headphone with our wireless charging station and receive an extra 20% cashback.</p>
+      </div>
+      <div class="strip-cta">
+        <a href="#featured" class="btn btn-light-large">Unlock Bundle Deal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="section-title-box">
+        <span class="subtitle">Verified Buyer Experiences</span>
+        <h2 class="title">What Our Customers Say</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar av-1">ED</div>
+            <div class="reviewer-meta">
+              <h4>Elena Davis</h4>
+              <span class="verified">✓ Verified Buyer</span>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "The Pulse ANC headphones arrived in less than 48 hours. The noise cancellation is breathtaking and beats other flagship brands at half the price!"
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar av-2">MR</div>
+            <div class="reviewer-meta">
+              <h4>Marcus Reynolds</h4>
+              <span class="verified">✓ Verified Buyer</span>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Shopping on AuraShop is smooth and painless. Great packaging, authentic accessories, and exceptional responsive design across my phone and tablet."
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar av-3">SP</div>
+            <div class="reviewer-meta">
+              <h4>Sophia Patel</h4>
+              <span class="verified">✓ Verified Buyer</span>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "The ChronoFit titanium watch battery lasts over 12 days on a single charge. Customer support was quick to verify warranty information too."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shopping Benefits Section -->
+  <section class="benefits-section">
+    <div class="container benefits-grid">
+      <div class="benefit-item">
+        <span class="b-icon">🚚</span>
+        <div>
+          <h4>Free Express Shipping</h4>
+          <p>Orders over $50 dispatched within 24 hours</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <span class="b-icon">🔒</span>
+        <div>
+          <h4>Secure Payments</h4>
+          <p>256-bit SSL encrypted checkout gateways</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <span class="b-icon">🔄</span>
+        <div>
+          <h4>30-Day Easy Returns</h4>
+          <p>No questions asked return or replacement policy</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <span class="b-icon">💬</span>
+        <div>
+          <h4>24/7 Live Support</h4>
+          <p>Dedicated customer care specialists ready to help</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section id="newsletter" class="newsletter-section">
+    <div class="container newsletter-box">
+      <span class="news-tag">Stay in the Loop</span>
+      <h2>Get $20 Off Your First Order</h2>
+      <p>Subscribe to receive product drops, private seasonal sales, and member-only tech perks.</p>
+      <form class="newsletter-form" action="#" method="POST">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-main-grid">
+      <div class="footer-about">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-symbol">❖</span> Aura<span>Shop</span>
+        </a>
+        <p>Your premier destination for verified consumer electronics, wearables, and curated lifestyle accessories.</p>
+        <div class="payment-badges">
+          <span>VISA</span>
+          <span>Mastercard</span>
+          <span>PayPal</span>
+          <span>ApplePay</span>
+        </div>
+      </div>
+      <div class="footer-links-col">
+        <h4>Shop Categories</h4>
+        <ul>
+          <li><a href="#categories">Laptops &amp; PCs</a></li>
+          <li><a href="#categories">Headphones &amp; Audio</a></li>
+          <li><a href="#categories">Smart Watches</a></li>
+          <li><a href="#categories">Gaming Rigs</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Returns &amp; Refunds</a></li>
+          <li><a href="#">Warranty Registry</a></li>
+          <li><a href="#">Shipping Rates</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About AuraShop</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 AuraShop E-Commerce Technologies Inc. All rights reserved.</p>
+        <div class="sub-links">
+          <a href="#">Security</a>
+          <a href="#">Compliance</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
